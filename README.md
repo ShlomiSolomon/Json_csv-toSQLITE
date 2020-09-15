@@ -10,7 +10,9 @@ The graph module listens to the second queue and make a real-time graph from the
 
 # Instructions :
 Run receiver.py , now both Receiver.py and sender.py will run , and you need to input the file path (you can use the files from the program). now the database will create/update
+
 Run graph.py , now you can watch the graph.
+
 
 You can run sender.py many times with different file path.
 NOTHE :
