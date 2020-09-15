@@ -1,0 +1,81 @@
+InvoiceId,CustomerId,InvoiceDate,BillingAddress,BillingCity,BillingState,BillingCountry,BillingPostalCode,Total
+333,30,2013-01-02 00:00:00,230 Elgin Street,Ottawa,ON,Canada,K2P 1L7,2868.09
+334,39,2013-01-07 00:00:00,"4, Rue Milton",Paris,,France,75009,691.86
+335,53,2013-01-15 00:00:00,113 Lupus St,London,,United Kingdom,SW1V 3EN,3492.99
+336,54,2013-01-28 00:00:00,110 Raeburn Pl,Edinburgh ,,United Kingdom,EH4 1HH,2953.98
+337,56,2013-01-28 00:00:00,307 Macacha Güemes,Buenos Aires,,Argentina,1106,3574.98
+338,58,2013-01-29 00:00:00,"12,Community Centre",Delhi,,India,110017,1377.04
+339,3,2013-01-30 00:00:00,1498 rue Bélanger,Montréal,QC,Canada,H2G 1A7,182.06
+340,9,2013-02-02 00:00:00,Sønder Boulevard 51,Copenhagen,,Denmark,1720,1200.09
+341,18,2013-02-07 00:00:00,627 Broadway,New York,NY,USA,10012-2612,3112.14
+342,32,2013-02-15 00:00:00,696 Osborne Street,Winnipeg,MB,Canada,R3L 2B9,141.01
+343,33,2013-02-28 00:00:00,5112 48 Street,Yellowknife,NT,Canada,X1A 1N6,3577.98
+344,35,2013-02-28 00:00:00,"Rua dos Campeões Europeus de Viena, 4350",Porto,,Portugal,,322.98
+345,37,2013-03-01 00:00:00,Berger Straße 10,Frankfurt,,Germany,60316,2964.96
+346,41,2013-03-02 00:00:00,"11, Place Bellecour",Lyon,,France,69002,1661.94
+347,47,2013-03-05 00:00:00,"Via Degli Scipioni, 43",Rome,RM,Italy,00192,1086.09
+348,56,2013-03-10 00:00:00,307 Macacha Güemes,Buenos Aires,,Argentina,1106,3367.14
+349,11,2013-03-18 00:00:00,"Av. Paulista, 2022",São Paulo,SP,Brazil,01310-200,2060.01
+350,12,2013-03-31 00:00:00,"Praça Pio X, 119",Rio de Janeiro,RJ,Brazil,20040-020,3317.98
+351,14,2013-03-31 00:00:00,8210 111 ST NW,Edmonton,AB,Canada,T6G 2C7,2203.98
+352,16,2013-04-01 00:00:00,1600 Amphitheatre Parkway,Mountain View,CA,USA,94043-1351,408.04
+353,20,2013-04-02 00:00:00,541 Del Medio Avenue,Mountain View,CA,USA,94040-111,963.06
+354,26,2013-04-05 00:00:00,2211 W Berry Street,Fort Worth,TX,USA,76110,976.91
+355,35,2013-04-10 00:00:00,"Rua dos Campeões Europeus de Viena, 4350",Porto,,Portugal,,658.14
+356,49,2013-04-18 00:00:00,Ordynacka 10,Warsaw,,Poland,00-358,2033.99
+357,50,2013-05-01 00:00:00,C/ San Bernardo 85,Madrid,,Spain,28015,765.02
+358,52,2013-05-01 00:00:00,202 Hoxton Street,London,,United Kingdom,N1 5LH,3476.02
+359,54,2013-05-02 00:00:00,110 Raeburn Pl,Edinburgh ,,United Kingdom,EH4 1HH,775.04
+360,58,2013-05-03 00:00:00,"12,Community Centre",Delhi,,India,110017,698.94
+361,5,2013-05-06 00:00:00,Klanova 9/506,Prague,,Czech Republic,14700,349.91
+362,14,2013-05-11 00:00:00,8210 111 ST NW,Edmonton,AB,Canada,T6G 2C7,1388.86
+363,28,2013-05-19 00:00:00,302 S 700 E,Salt Lake City,UT,USA,84102,1595.01
+364,29,2013-06-01 00:00:00,796 Dundas Street West,Toronto,ON,Canada,M6J 1V1,3539.02
+365,31,2013-06-01 00:00:00,194A Chain Lake Drive,Halifax,NS,Canada,B3S 1C5,674.02
+366,33,2013-06-02 00:00:00,5112 48 Street,Yellowknife,NT,Canada,X1A 1N6,3100.04
+367,37,2013-06-03 00:00:00,Berger Straße 10,Frankfurt,,Germany,60316,68.94
+368,43,2013-06-06 00:00:00,"68, Rue Jouvence",Dijon,,France,21000,3587.09
+369,52,2013-06-11 00:00:00,202 Hoxton Street,London,,United Kingdom,N1 5LH,1036.14
+370,7,2013-06-19 00:00:00,"Rotenturmstraße 4, 1010 Innere Stadt",Vienne,,Austria,1010,1765.99
+371,8,2013-07-02 00:00:00,Grétrystraat 63,Brussels,,Belgium,1000,3509.02
+372,10,2013-07-02 00:00:00,"Rua Dr. Falcão Filho, 155",São Paulo,SP,Brazil,01007-010,1509.98
+373,12,2013-07-03 00:00:00,"Praça Pio X, 119",Rio de Janeiro,RJ,Brazil,20040-020,583.96
+374,16,2013-07-04 00:00:00,1600 Amphitheatre Parkway,Mountain View,CA,USA,94043-1351,3478.06
+375,22,2013-07-07 00:00:00,120 S Orange Ave,Orlando,FL,USA,32801,1959.91
+376,31,2013-07-12 00:00:00,194A Chain Lake Drive,Halifax,NS,Canada,B3S 1C5,2704.14
+377,45,2013-07-20 00:00:00,Erzsébet krt. 58.,Budapest,,Hungary,H-1073,172.99
+378,46,2013-08-02 00:00:00,3 Chatham Street,Dublin,Dublin,Ireland,,2504.02
+379,48,2013-08-02 00:00:00,Lijnbaansgracht 120bg,Amsterdam,VV,Netherlands,1016,1749.98
+380,50,2013-08-03 00:00:00,C/ San Bernardo 85,Madrid,,Spain,28015,287.04
+381,54,2013-08-04 00:00:00,110 Raeburn Pl,Edinburgh ,,United Kingdom,EH4 1HH,1859.06
+382,1,2013-08-07 00:00:00,"Av. Brigadeiro Faria Lima, 2170",São José dos Campos,SP,Brazil,12227-000,666.09
+383,10,2013-08-12 00:00:00,"Rua Dr. Falcão Filho, 155",São Paulo,SP,Brazil,01007-010,3306.86
+384,24,2013-08-20 00:00:00,162 E Superior Street,Chicago,IL,USA,60611,3119.99
+385,25,2013-09-02 00:00:00,319 N. Frances Street,Madison,WI,USA,53703,1738.02
+386,27,2013-09-02 00:00:00,1033 N Park Ave,Tucson,AZ,USA,85719,2717.02
+387,29,2013-09-03 00:00:00,796 Dundas Street West,Toronto,ON,Canada,M6J 1V1,1511.96
+388,33,2013-09-04 00:00:00,5112 48 Street,Yellowknife,NT,Canada,X1A 1N6,2145.06
+389,39,2013-09-07 00:00:00,"4, Rue Milton",Paris,,France,75009,916.09
+390,48,2013-09-12 00:00:00,Lijnbaansgracht 120bg,Amsterdam,VV,Netherlands,1016,385.14
+391,3,2013-09-20 00:00:00,1498 rue Bélanger,Montréal,QC,Canada,H2G 1A7,1690.99
+392,4,2013-10-03 00:00:00,Ullevålsveien 14,Oslo,,Norway,0171,3541.98
+393,6,2013-10-03 00:00:00,Rilská 3174/6,Prague,,Czech Republic,14300,3526.02
+394,8,2013-10-04 00:00:00,Grétrystraat 63,Brussels,,Belgium,1000,2120.96
+395,12,2013-10-05 00:00:00,"Praça Pio X, 119",Rio de Janeiro,RJ,Brazil,20040-020,3565.06
+396,18,2013-10-08 00:00:00,627 Broadway,New York,NY,USA,10012-2612,694.91
+397,27,2013-10-13 00:00:00,1033 N Park Ave,Tucson,AZ,USA,85719,455.14
+398,41,2013-10-21 00:00:00,"11, Place Bellecour",Lyon,,France,69002,1239.01
+399,42,2013-11-03 00:00:00,"9, Place Louis Barthou",Bordeaux,,France,33000,1120.02
+400,44,2013-11-03 00:00:00,Porthaninkatu 9,Helsinki,,Finland,00530,3591.98
+401,46,2013-11-04 00:00:00,3 Chatham Street,Dublin,Dublin,Ireland,,803.04
+402,50,2013-11-05 00:00:00,C/ San Bernardo 85,Madrid,,Spain,28015,3211.94
+403,56,2013-11-08 00:00:00,307 Macacha Güemes,Buenos Aires,,Argentina,1106,1524.91
+404,6,2013-11-13 00:00:00,Rilská 3174/6,Prague,,Czech Republic,14300,2521.14
+405,20,2013-11-21 00:00:00,541 Del Medio Avenue,Mountain View,CA,USA,94040-111,3056.01
+406,21,2013-12-04 00:00:00,801 W 4th Street,Reno,NV,USA,89503,1648.98
+407,23,2013-12-04 00:00:00,69 Salem Street,Boston,MA,USA,2113,55.98
+408,25,2013-12-05 00:00:00,319 N. Frances Street,Madison,WI,USA,53703,2413.96
+409,29,2013-12-06 00:00:00,796 Dundas Street West,Toronto,ON,Canada,M6J 1V1,3455.06
+410,35,2013-12-09 00:00:00,"Rua dos Campeões Europeus de Viena, 4350",Porto,,Portugal,,2219.91
+411,44,2013-12-14 00:00:00,Porthaninkatu 9,Helsinki,,Finland,00530,1976.14
+412,58,2013-12-22 00:00:00,"12,Community Centre",Delhi,,India,110017,1108.01
