@@ -5,7 +5,9 @@ This program contains three modules : sender, receiver and graph , which connect
 
 
 The sender module get file path and send a json message to MQ with three parameters : file path, file name and file format .
+
 The receiver module listens to the first queue and load the file into specific table in the "database.db" .
+
 The graph module listens to the second queue and make a real-time graph from the table that load in the receiver , The graph show total sales and number of costumers from each month from the "database.db" .
 
 # Instructions :
@@ -14,7 +16,9 @@ Run receiver.py , now both Receiver.py and sender.py will run , and you need to 
 Run graph.py , now you can watch the graph.
 
 
+
 You can run sender.py many times with different file path.
+
 NOTHE :
 If you use the same table name the data in the table will update in the DB as well as the graph, if you use a new name to the table the receiver will create another table in the DB as well as the graph .
 
