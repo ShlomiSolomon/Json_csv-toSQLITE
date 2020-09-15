@@ -51,7 +51,7 @@ def callback(ch,method,properties,body):
     # convert the string into json valid format
     convertStringToJsonData = json.dumps(stringJsongraph)
     channel.basic_publish(exchange='', routing_key='graph', body=convertStringToJsonData)
-    print("[x] sent end of load and run %s graph " %convertStringToJsonData )
+    print("[x] sent end of load and run %s graph " %table_name )
 
 
 channel.basic_consume(queue='message', auto_ack=True, on_message_callback=callback)
