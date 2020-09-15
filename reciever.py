@@ -1,41 +1,28 @@
 import pika
 import json
-import os
 import sqlite3
 from sqlite3 import Error
-from sender import FORMAT
-import csv
-import platform
 from sender import stringJsonMsg
 import pandas as pd
 
 
-# define empty string for the received msg
-DATA = stringJsonMsg
-# define the File_Path string value
-File_Path = ''
-#define the FORMAT of the output
-FORMAT = ''
-#define the table name
-table_name = ''
+# define a new function to init the key-value of the json msg and call to :db build
 
-# define a new function to init the key-value of the json msg and call to :create_connection_and_run_query
-
-def parse_recievedMsg_and_CreateConnToDb(data):
+def parse_recievedMsg(data):
     json_data = json.loads(data)
-    File_Path = json_data['file-path']
-    FORMAT = json_data['file-format']
+    file_path = json_data['file-path']
+    Format = json_data['file-format']
     table_name = json_data['table-name']
-    db_build(File_Path,FORMAT,table_name)
+    db_build(file_path,Format,table_name)
 
 
 # define a new function to create a connection and then to run the query
-def db_build(File_Path,FORMAT,table_name):
+def db_build(file_path, format, table_name):
     # load data
-    if (FORMAT == 'json'):
-        df = pd.read_json(File_Path)
+    if format == 'json':
+        df = pd.read_json(file_path)
     else:
-        df = pd.read_csv(File_Path)
+        df = pd.read_csv(file_path)
     # strip whitespace from headers
     df.columns = df.columns.str.strip()
     # sort headers by name
@@ -48,31 +35,34 @@ def db_build(File_Path,FORMAT,table_name):
     except Error as e:
         print(e)
 
-
-
+# build the message as string in json structure using the array and the path const  ,'table name':table_name
+stringJsongraph = {'table-name': table_name}
+# convert the string into json valid format
+convertStringToJsonData = json.dumps(stringJsongraph)
+print(convertStringToJsonData)
 
                                                         # # # MQ # # #
 
 connection = pika.BlockingConnection( pika.ConnectionParameters(host= 'localhost' ) )
 channel = connection.channel()
 
-channel.queue_declare(queue='db_conn')
+channel.queue_declare(queue='message')
 
 def callback(ch,method,properties,body):
-    DATA = body
-    parse_recievedMsg_and_CreateConnToDb(DATA)
-    print(("[x] received %s" % DATA))
+    data = body
+    parse_recievedMsg(data)
+    print(("[x] received %s" % data))
 
-channel.basic_consume(queue='db_conn', auto_ack=True, on_message_callback=callback)
+
+channel.basic_consume(queue='message', auto_ack=True, on_message_callback=callback)
 print( '[*] Waiting for msgs' )
 try:
     channel.start_consuming()
 finally:
     connection.close()
 
-#                                        # # # MQ # # #
-# # connect to localhost using pika : Pika is a pure-Python implementation of the AMQP 0-9-1 protocol
-# connection = pika.BlockingConnection(pika.ConnectionParameters(host='localhost'))
+
+#
 # channel = connection.channel()
 # #declare on the queue name we are going to listen to on the recieve.py class
 # channel.queue_declare(queue='graph')
@@ -80,8 +70,10 @@ finally:
 # #exchange    == (str or unicode) – The exchange to publish to
 # #routing_key == (str or unicode) – The routing key to bind on
 # #body        == (str or unicode) – The message body
-# channel.basic_publish(exchange='', routing_key='graph', body="end of load")
-# print("[x] sent end of load")
+# channel.basic_publish(exchange='', routing_key='graph', body=convertStringToJsonData)
+# print("[x] sent end of load and run %s graph " %convertStringToJsonData )
 # #close the connection when finish
-# connection.close()
-#
+# try:
+#     channel.start_consuming()
+# finally:
+#     connection.close()
