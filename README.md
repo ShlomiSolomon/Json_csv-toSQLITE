@@ -1,4 +1,4 @@
-## Json_csv-toSQLITE
+# Json_csv-toSQLITE
 
 This project will recieve a json or csv file and create (or update) table in the database (SQLITE)
 This program contains three modules : sender, receiver and graph , which connected by RabbitMQ (Message queue).
@@ -16,12 +16,12 @@ You can run sender.py many times with different file path.
 NOTHE :
 If you use the same table name the data in the table will update in the DB as well as the graph, if you use a new name to the table the receiver will create another table in the DB as well as the graph .
 
-# Built With :
+## Built With :
 RabbitMQ - The message queue
 SQLite - Database managment Ver. 3
 Pandas - Python Data Analysis Library
 Python Ver. 3.7
 
 
-Author:
+## Author:
 Shlomi Solomon
